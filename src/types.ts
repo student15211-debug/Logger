@@ -1,0 +1,9 @@
+export type Subject = { id: string; name: string; level: 'HL' | 'SL'; shortName?: string; createdAt: string; updatedAt: string }
+export type Paper = { id: string; subjectId: string; year: number; session: string; paperType: string; variant?: string; timezone?: string; identityKey: string; createdAt: string; updatedAt: string }
+export type Attempt = { id: string; paperId: string; type: 'FULL' | 'PARTIAL'; attemptedAt: string; score: number | null; maxMarks: number | null; notes?: string; createdAt: string; updatedAt: string }
+export type QuestionAttempt = { id: string; attemptId: string; questionLabel: string; score: number; maxMarks: number; notes?: string; createdAt: string; updatedAt: string }
+export type QuestionDraft = { id: string; label: string; score: string; maxMarks: string; notes: string }
+export type WizardStep = 'paper' | 'type' | 'questions' | 'confirm' | 'marks' | 'review'
+export type LogDraft = { id: 'current'; step: WizardStep; subjectId: string; year: string; session: string; paperType: string; variant: string; timezone: string; attemptedAt: string; type: 'FULL' | 'PARTIAL' | ''; score: string; maxMarks: string; notes: string; rawQuestions: string; questions: QuestionDraft[]; updatedAt: string }
+export type Preferences = { id: 'main'; theme: 'light' | 'dark' | 'system'; browseSort: string; browseGroup: 'subject' | 'flat'; sidebarCollapsed: boolean }
+export type Backup = { schemaVersion: 1; exportedAt: string; subjects: Subject[]; papers: Paper[]; attempts: Attempt[]; questionAttempts: QuestionAttempt[]; draft: LogDraft | null; preferences: Preferences }

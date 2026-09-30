@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-29T12:00:00.000Z",
+  "subjects": [
+    {
+      "id": "subject-math-aa",
+      "name": "Mathematics: Analysis and Approaches",
+      "level": "HL",
+      "shortName": "Math AA",
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper-math-2024",
+      "subjectId": "subject-math-aa",
+      "year": 2024,
+      "session": "May",
+      "paperType": "Paper 2",
+      "timezone": "TZ2",
+      "identityKey": "subject-math-aa|2024|may|paper 2||tz2",
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "attempt-math-full",
+      "paperId": "paper-math-2024",
+      "type": "FULL",
+      "attemptedAt": "2026-09-20",
+      "score": 62,
+      "maxMarks": 80,
+      "notes": "Review calculus proofs.",
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    },
+    {
+      "id": "attempt-math-partial",
+      "paperId": "paper-math-2024",
+      "type": "PARTIAL",
+      "attemptedAt": "2026-09-25",
+      "score": null,
+      "maxMarks": null,
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    }
+  ],
+  "questionAttempts": [
+    {
+      "id": "question-math-3",
+      "attemptId": "attempt-math-partial",
+      "questionLabel": "3(a)(ii)",
+      "score": 4,
+      "maxMarks": 6,
+      "notes": "Check the domain.",
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    },
+    {
+      "id": "question-math-4",
+      "attemptId": "attempt-math-partial",
+      "questionLabel": "4",
+      "score": 7,
+      "maxMarks": 8,
+      "createdAt": "2026-09-29T12:00:00.000Z",
+      "updatedAt": "2026-09-29T12:00:00.000Z"
+    }
+  ],
+  "draft": {
+    "id": "current",
+    "step": "marks",
+    "subjectId": "subject-math-aa",
+    "year": "2024",
+    "session": "May",
+    "paperType": "Paper 2",
+    "variant": "",
+    "timezone": "TZ2",
+    "attemptedAt": "2026-09-29",
+    "type": "PARTIAL",
+    "score": "",
+    "maxMarks": "",
+    "notes": "Try again next week.",
+    "rawQuestions": "3(a)(ii), 4",
+    "questions": [
+      { "id": "draft-q3", "label": "3(a)(ii)", "score": "5", "maxMarks": "6", "notes": "Better this time." },
+      { "id": "draft-q4", "label": "4", "score": "", "maxMarks": "", "notes": "" }
+    ],
+    "updatedAt": "2026-09-29T12:00:00.000Z"
+  },
+  "preferences": {
+    "id": "main",
+    "theme": "dark",
+    "browseSort": "recent",
+    "browseGroup": "subject",
+    "sidebarCollapsed": false
+  }
+}
